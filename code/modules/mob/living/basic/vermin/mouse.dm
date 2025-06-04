@@ -151,7 +151,7 @@
 			var/obj/item/food/deadmouse/mouse = new(place_to_make_corpse)
 			mouse.copy_corpse(src)
 			if(HAS_TRAIT(src, TRAIT_BEING_SHOCKED))
-				mouse.desc = "They're toast."
+				mouse.desc = "[p_Theyre()] toast."
 				mouse.add_atom_colour("#3A3A3A", FIXED_COLOUR_PRIORITY)
 	qdel(src)
 
@@ -396,7 +396,7 @@
 
 /obj/item/food/deadmouse/moldy
 	name = "moldy dead mouse"
-	desc = "A dead rodent, consumed by mold and rot. There is a slim chance that a lizard might still eat it."
+	desc = "A dead rodent, consumed by mold and rot. There is still a slim chance that a lizard might eat it."
 	icon_state = "mouse_gray_dead"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/consumable/mold = 10)
 	foodtypes = GORE | MEAT | RAW | GROSS
@@ -454,7 +454,7 @@
 		BB_OWNER_SELF_HARM_RESPONSES = list(
 			"*me cleans its whiskers in disapproval.",
 			"*me squeaks sadly.",
-			"*me sheds a single small tear."
+			"*me sheds a single, small tear."
 		)
 	)
 
